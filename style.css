@@ -1,0 +1,152 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Variable CSS */
+:root{
+    --header-height: 3rem;
+    --nav-width: 324px;
+
+    /* Font weight */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* Colors */
+    --first-white: #EAE7E6;
+    --dark-blue: hsl(229, 31%, 21%);
+    --blue: hsl(231, 69%, 60%);
+    --white: hsl(229, 8%, 60%);
+
+    /* Font and typography */
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* Margins */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+
+    /* Z index */
+    --z-fixed: 100;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+#hamburger{
+    display: flex;
+    align-items: center;
+    width: 18px;
+}
+
+/* Bookmark section */
+
+#bookmark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+#hero{
+    margin: 2rem;
+}
+
+#hero img{
+    width: 23rem;
+}
+
+.write-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write-up h1{
+    text-align: center;
+    width: 85%;
+    color: var(--dark-blue);
+}
+
+.write-up p{
+    margin: 1rem 0;
+    text-align: center;
+    width: 80%;
+    color: var(--white);
+    line-height: 1.5rem;
+}
+
+#bookmark-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.blue-btn,
+.white-btn{
+    width: 10rem;
+    height: 3rem;
+    margin: var(--mb-1);
+    border: none;
+    border-radius: .3rem;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.blue-btn{
+    color: var(--first-white);
+    background-color: var(--blue);
+}
+
+.white-btn{
+    color: var(--white);
+}
+
+/* Features section */
+
+#features2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.line{
+    height: .01rem;
+    width: 80%;
+    background-color: var(--white);
+    outline: none;
+}
+
+.orange-mark{
+    height: 0.3rem;
+    width: 35%;
+    background-color: hsl(0, 94%, 66%);
+}
+
+.line-word{
+    margin: 1rem 0;
+    color: var(--white);
+    font-weight: var(--font-medium);
+}
+
+.line1{
+    color: var(--dark-blue);
+}
