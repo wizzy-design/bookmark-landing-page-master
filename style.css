@@ -45,6 +45,10 @@
     font-family: var(--body-font);
 }
 
+button{
+    cursor: pointer;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -229,4 +233,33 @@ nav{
     font-size: var(--h3-font-size);
     font-weight: var(--font-semi-bold);
 }
+
+/* FAQs */
+
+#faqs{
+    margin: 5rem 0;
+}
+
+#dropdowns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 1.3rem 0;
+}
+
+#more-info{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+
+
 
