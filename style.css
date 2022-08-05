@@ -1,5 +1,5 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 /* Variable CSS */
 :root{
@@ -18,7 +18,7 @@
     --white: hsl(229, 8%, 60%);
 
     /* Font and typography */
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Rubik', sans-serif;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
@@ -65,11 +65,11 @@ nav{
     margin-bottom: 12rem;
 }
 
-#hero{
+.hero{
     margin: 2rem;
 }
 
-#hero img{
+.hero img{
     width: 23rem;
 }
 
@@ -120,6 +120,12 @@ nav{
 }
 
 /* Features section */
+/* #features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12rem;
+} */
 
 #features2{
     display: flex;
@@ -149,4 +155,15 @@ nav{
 
 .line1{
     color: var(--dark-blue);
+}
+
+.feature-bookmark{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.hero2 img{
+    width: 20rem;
 }
