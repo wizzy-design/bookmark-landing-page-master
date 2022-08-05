@@ -13,6 +13,7 @@
 
     /* Colors */
     --first-white: #EAE7E6;
+    --first-white-lighten: #FFFAFA;
     --dark-blue: hsl(229, 31%, 21%);
     --blue: hsl(231, 69%, 60%);
     --white: hsl(229, 8%, 60%);
@@ -99,8 +100,7 @@ nav{
     justify-content: center;
 }
 
-.blue-btn,
-.white-btn{
+.btn{
     width: 10rem;
     height: 3rem;
     margin: var(--mb-1);
@@ -167,3 +167,66 @@ nav{
 .hero2 img{
     width: 20rem;
 }
+
+/* Extension Section */
+#extension{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+#browsers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+.browser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 22rem;
+    border-radius: .5rem;
+    background-color: var(--first-white-lighten);
+    box-shadow: 7px 8px 4px rgba(0,0,0,.1);
+    margin: 2rem 0;
+    /* overflow: hidden; */
+}
+
+.browser-logo{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+#browsers .write-up{
+    width: 100%;
+    padding-bottom: 1.2rem;
+}
+
+
+.dotted-line{
+    width: 100%;
+}
+
+.browser-btn-div{
+    margin: 2rem;
+    /* height: 200rem; */
+    /* margin-bottom: var(--mb-4); */
+}
+
+.browser-btn{
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    border-radius: .3rem;
+    color: var(--first-white);
+    background-color: var(--blue);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
