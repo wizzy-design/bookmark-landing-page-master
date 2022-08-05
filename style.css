@@ -17,6 +17,7 @@
     --dark-blue: hsl(229, 31%, 21%);
     --blue: hsl(231, 69%, 60%);
     --white: hsl(229, 8%, 60%);
+    --red: hsl(0, 94%, 66%);
 
     /* Font and typography */
     --body-font: 'Rubik', sans-serif;
@@ -148,7 +149,7 @@ nav{
 .orange-mark{
     height: 0.3rem;
     width: 35%;
-    background-color: hsl(0, 94%, 66%);
+    background-color: var(--red);
 }
 
 .line-word{
@@ -258,6 +259,65 @@ nav{
     display: flex;
     justify-content: center;
     margin: 4rem 0;
+}
+
+/* Contact Us Section */
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);
+    height: 23rem;
+    padding: 5rem 0;
+}
+
+#up-write{
+    text-align: center;
+}
+
+#up-write p{
+    letter-spacing: 3px;
+    font-size: var(--normal-font-size);
+    text-transform: uppercase;
+    color: var(--first-white);
+}
+
+#up-write h1{
+    color: var(--first-white);
+}
+
+#inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#inputs form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+#inputs form input{
+    width: 85%;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    border-radius: .3rem;
+    font-size: var(--h3-font-size);
+}
+
+#input1::placeholder{
+    color: var(--first-white);
+}
+
+#input2{
+    color: var(--first-white);
+    background-color: var(--red);
 }
 
 
