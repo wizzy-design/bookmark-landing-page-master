@@ -255,6 +255,22 @@ nav{
     margin: 1.3rem 0;
 }
 
+
+.answer1{
+    display: block;
+    width: 80%;
+    margin: 1.5rem 0;
+}
+
+.answerss{
+    display: none;
+}
+
+.answer{
+    width: 80%;
+    margin: 1.5rem 0;
+}
+
 #more-info{
     display: flex;
     justify-content: center;
@@ -318,6 +334,53 @@ nav{
 #input2{
     color: var(--first-white);
     background-color: var(--red);
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 22rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+    align-items: center;
+}
+
+footer .logo{
+    margin-top: 2rem;
+}
+
+.footer-links{
+    margin: 1rem 0;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: center;
+}
+
+.footer-links ul li{
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.footer-links ul li a{
+    text-decoration: none;
+    color: var(--first-white);
+}
+
+.social-links{
+    margin: 1rem 0;
+}
+
+.social-links img{
+    padding: 0 1rem;
+}
+
+.attribution p{
+    text-align: center;
+    color: var(--first-white-lighten);
+    font-size: var(--smaller-font-size);
+    margin: 1rem 0;
 }
 
 
