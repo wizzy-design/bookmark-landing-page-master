@@ -56,6 +56,10 @@ nav{
     margin: 2rem;
 }
 
+#nav-links{
+    display: none;
+}
+
 #hamburger{
     display: flex;
     align-items: center;
@@ -72,6 +76,7 @@ nav{
 }
 
 .hero{
+    position: relative;
     margin: 2rem;
 }
 
@@ -124,6 +129,10 @@ nav{
     color: var(--white);
 }
 
+.blue-back{
+    background-color: var(--blue);
+}
+
 /* Features section */
 /* #features{
     display: flex;
@@ -156,6 +165,10 @@ nav{
     margin: 1rem 0;
     color: var(--white);
     font-weight: var(--font-medium);
+}
+
+.line-word:hover{
+    color: var(--red);
 }
 
 .line1{
@@ -382,6 +395,136 @@ footer .logo{
     font-size: var(--smaller-font-size);
     margin: 1rem 0;
 }
+
+/* Desktop version */
+@media screen and (min-width: 1024px){
+
+/* Navigation bar */
+
+#hamburger{
+    display: none;
+}
+
+#nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link{
+    margin: 0 1rem;
+    list-style-type: none;
+    cursor: pointer;
+    color: var(--white);
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover{
+    color: var(--red);
+}
+
+.login{
+    background-color: var(--red);
+    border-radius: 0.2rem;
+    padding: 0.5rem 1.2rem;
+}
+
+.login:hover{
+    background-color: var(--first-white-lighten);
+    border: 1px solid var(--red);
+}
+
+.login:hover a{
+    color: var(--red);
+}
+
+.login a{
+    color: var(--first-white-lighten);
+}
+
+.login a:hover{
+    color: var(--red);
+}
+
+/* Bookmark section */
+#bookmark{
+    flex-direction: row-reverse;
+    margin: 2.5rem 0;
+}
+
+/* .write-up{
+    margin: 0 4rem;
+} */
+
+.write-up h1{
+    font-size: 2rem;
+    font-weight: 500;
+    width: 60%;
+    text-align: left;
+}
+
+.write-up p{
+    width: 60%;
+    text-align: left;
+}
+
+#bookmark-btn{
+    margin-left: -1%;
+}
+
+.hero img{
+    width: 28rem;
+}
+
+/* Features */
+
+#features .write-up p{
+    text-align: center;
+    width: 45%;
+}
+
+#features2{
+    flex-direction: row;
+    position: relative;
+    gap: 10rem;
+    justify-content: center;
+    height: 90px;
+    margin-bottom: 3rem;
+}
+
+.linex,
+.orange-mark{
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+.linex{
+    width: 76%;
+}
+
+.orange-mark{
+    width: 25%;
+    left: 12%;
+    top: 95%;
+    z-index: 1;
+}
+
+.line-word{
+    transition: all 0.2s ease;
+}
+
+.line-word:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+
+}
+
+
+
+
 
 
 
