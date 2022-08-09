@@ -43,7 +43,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--body-font);
+    font-family: var(--body-font); 
 }
 
 button{
@@ -77,11 +77,31 @@ nav{
 
 .hero{
     position: relative;
+    display: flex;
+    justify-content: center;
     margin: 2rem;
 }
 
 .hero img{
     width: 23rem;
+    margin-bottom: 2rem;
+}
+
+.hero1{
+    overflow: hidden;
+    width: 100%;
+}
+
+.blue-back{
+    position: absolute;
+    height: 200px;
+    max-width: 340px;
+    width: 80%;
+    border-bottom-left-radius: 5rem;
+    top: 25%;
+    left: 20%;
+    background-color: var(--blue);
+    z-index: -1;
 }
 
 .write-up{
@@ -127,10 +147,6 @@ nav{
 
 .white-btn{
     color: var(--white);
-}
-
-.blue-back{
-    background-color: var(--blue);
 }
 
 /* Features section */
@@ -209,8 +225,8 @@ nav{
     width: 65%;
     height: 22rem;
     border-radius: .5rem;
-    background-color: var(--first-white-lighten);
-    box-shadow: 7px 8px 4px rgba(0,0,0,.1);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     margin: 2rem 0;
     /* overflow: hidden; */
 }
@@ -284,7 +300,7 @@ nav{
     margin: 1.5rem 0;
 }
 
-#more-info{
+.more-info{
     display: flex;
     justify-content: center;
     margin: 4rem 0;
@@ -475,6 +491,17 @@ footer .logo{
     width: 28rem;
 }
 
+.blue-back{
+    position: absolute;
+    height: 250px;
+    min-width: 77%;
+    border-bottom-left-radius: 5rem;
+    top: 25%;
+    left: 30%;
+    background-color: var(--blue);
+    z-index: -1;
+}
+
 /* Features */
 
 #features .write-up p{
@@ -503,7 +530,7 @@ footer .logo{
 }
 
 .orange-mark{
-    width: 25%;
+    width: 22%;
     left: 12%;
     top: 95%;
     z-index: 1;
@@ -518,7 +545,50 @@ footer .logo{
     cursor: pointer;
 }
 
+.feature-bookmark{
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+}
 
+#features .hero img{
+    margin: 0 0 0 4rem;
+    width: 24rem;
+}
+
+/* .hero2 .blue-back{
+    left: 0%;
+} */
+
+#feature .feature-bookmark .write-up{
+    width: 10%;
+}
+
+.feature-bookmark .write-up h1{
+    width: 70%;
+    text-align: left;
+}
+
+#features .feature-bookmark .write-up p{
+    width: 70%;
+    text-align: left;
+}
+
+#features .feature-bookmark .write-up .more-info{
+    margin: 0.5rem 0;
+    justify-content: left;
+    width: 70%;
+}
+
+#features .feature-bookmark .write-up .more-info .blue-btn{
+    width: 6rem;
+    font-size: .8rem;
+}
+
+#features .feature-bookmark .write-up .more-info .blue-btn,
+#features .feature-bookmark .write-up .more-info .btn{
+    margin: 0;
+}
 
 }
 
