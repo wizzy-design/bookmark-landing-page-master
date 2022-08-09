@@ -314,6 +314,7 @@ nav{
 }
 
 .answer{
+    display: none;
     width: 80%;
     margin: 1.5rem 0;
 }
@@ -422,8 +423,8 @@ footer .logo{
     margin: 1rem 0;
 }
 
-.social-links img{
-    padding: 0 1rem;
+.social-links svg{
+    margin: 0 .5rem;
 }
 
 .attribution p{
@@ -465,9 +466,12 @@ footer .logo{
     padding: 0.5rem 1.2rem;
 }
 
-.login:hover{
+.login:hover,
+#input2:hover{
     background-color: var(--first-white-lighten);
-    border: 1px solid var(--red);
+    border: 2px solid var(--red);
+    color: var(--red);
+    outline: none;
 }
 
 .login:hover a{
@@ -480,6 +484,24 @@ footer .logo{
 
 .login a:hover{
     color: var(--red);
+}
+
+.white-btn, 
+.blue-btn{
+    transition: all 0.5s ease;
+}
+
+.white-btn:hover{
+    background-color: var(--first-white-lighten);
+    border: 2px solid rgb(26, 22, 22);
+    color: rgb(26, 22, 22);
+}
+
+.blue-btn:hover,
+.browser-btn:hover{
+    background-color: var(--first-white-lighten);
+    border: 2px solid var(--blue);
+    color: var(--blue);
 }
 
 /* Bookmark section */
@@ -505,7 +527,7 @@ footer .logo{
 }
 
 #bookmark-btn{
-    margin-left: -1%;
+    margin-left: 4%;
 }
 
 .hero img{
@@ -640,6 +662,7 @@ footer .logo{
     gap: 2rem;
     justify-content: center;
     margin: 0 0 8rem 0;
+    
 }
 
 .browser{
@@ -670,6 +693,10 @@ footer .logo{
     width: 80%;
 }
 
+.browser-btn{
+    transition: all 0.5s ease;
+}
+
 /* FAQs */
 #faqs .write-up h1,
 #faqs .write-up p{
@@ -682,8 +709,20 @@ footer .logo{
 
 .dropdown,
 .answer,
-.line{
+#dropdowns .line{
     width: 45%;
+}
+
+.dropdown{
+    transition: all 0.5s ease;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+.dropdown:hover .question{
+    color: var(--red);
 }
 
 #faqs .btn{
@@ -718,11 +757,53 @@ footer .logo{
 
 /* Footer */
 footer{
-    flex-direction: row;
+    /* flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-areas: 
+    "logo footer-links social-links"
+    ". attribution .";
+    height: 100px;
 }
 
+footer .logo{
+    grid-area: logo;
+    margin: 0 0 0 5rem;
+}
+
+.footer-links ul{
+    grid-area: footer-links;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 0.5s ease;
+}
+
+.footer-links ul li a:hover{
+    color: var(--red);
+}
+
+.social-links{
+    grid-area: social-links;
+    transition: all 0.5s ease;
+}
+
+.social-links a svg path:hover{
+    fill: var(--red);
+}
+
+
 .attribution{
+    grid-area: attribution;
     display: none;
+}
+
+.attribution p{
+    margin: 0;
+    color: hsl(229, 8%, 60%);
+    font-size: 8px;
 }
 
 
