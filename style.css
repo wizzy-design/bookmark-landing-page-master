@@ -95,7 +95,7 @@ nav{
 .blue-back{
     position: absolute;
     height: 200px;
-    max-width: 340px;
+    max-width: 375px;
     width: 80%;
     border-bottom-left-radius: 5rem;
     top: 25%;
@@ -198,8 +198,26 @@ nav{
     margin: 2rem 0;
 }
 
+.hero2{
+    overflow: hidden;
+    width: 100%;
+    padding: 2rem 0;
+}
+
 .hero2 img{
     width: 20rem;
+}
+
+.blue-back2{
+    position: absolute;
+    height: 220px;
+    max-width: 375px;
+    width: 80%;
+    border-bottom-right-radius: 5rem;
+    top: 25%;
+    right: 20%;
+    background-color: var(--blue);
+    z-index: -1;
 }
 
 /* Extension Section */
@@ -491,10 +509,14 @@ footer .logo{
     width: 28rem;
 }
 
+.hero1{
+    overflow: visible;
+}
+
 .blue-back{
     position: absolute;
     height: 250px;
-    min-width: 77%;
+    min-width: 76%;
     border-bottom-left-radius: 5rem;
     top: 25%;
     left: 30%;
@@ -552,13 +574,25 @@ footer .logo{
 }
 
 #features .hero img{
-    margin: 0 0 0 4rem;
     width: 24rem;
 }
 
-/* .hero2 .blue-back{
-    left: 0%;
-} */
+.hero2{
+    width: 100%;
+    overflow: visible;
+}
+
+.blue-back2{
+    position: absolute;
+    height: 240px;
+    max-width: 473px;
+    width: 100%;
+    border-bottom-right-radius: 5rem;
+    top: 25%;
+    right: 30%;
+    background-color: var(--blue);
+    z-index: -1;
+}
 
 #feature .feature-bookmark .write-up{
     width: 10%;
