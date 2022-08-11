@@ -18,7 +18,10 @@ const fourthAnswer = document.querySelectorAll(".answer")[3];
 
 // Navigation bar 
 const burger = document.querySelector("#hamburger");
-const navLinks = document.querySelector("#nav-links");
+const burger1 = document.querySelector("#burger");
+const burger2 = document.querySelector(".close");
+
+const navLinks = document.querySelector(".nav-links");
 const socials = document.querySelector(".nav-socials");
 
 // Contact Us
@@ -26,6 +29,19 @@ const email = document.querySelector("#input1");
 const contact = document.querySelector("#input2");
 const invalid = document.querySelector(".invalid");
 const verification = document.querySelector(".verification");
+
+// Navigation burger
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    socials.classList.toggle("nav-socials-active");
+})
+
+burger2.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    socials.classList.toggle("nav-socials-active");  
+})
+
+
 
 // FAQs arrow actions and displays
 firstArrow.addEventListener, dropdown1.addEventListener("click", () => {
@@ -47,6 +63,7 @@ fourthArrow.addEventListener, dropdown4.addEventListener("click", () => {
     fourthAnswer.classList.toggle("answer4");
     fourthArrow.classList.toggle("rotate-arrow");
 });
+
 
 // contact.addEventListener("click", () => {
 //     let input = email.value;
