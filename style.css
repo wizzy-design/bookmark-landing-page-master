@@ -146,6 +146,10 @@ hr{
     font-family: "Rubik", sans-serif;
 }
 
+.login{
+    display: none;
+}
+
 .nav-socials-active {
     display: block;
     position: absolute;
@@ -158,13 +162,17 @@ hr{
     margin: 0 1rem;
 }
 
-.logo img {
+.lap-nav{
+    display: none;
+}
+
+/* .logo img {
     position: absolute;
     top: 5%;
     left: 7%;
     z-index: 2;
     filter: contrast(0.5);
-}
+} */
 
 /* Bookmark section */
 
@@ -603,24 +611,28 @@ nav{
     margin: 2rem;
 }
 
-#hamburger{
+#hamburger,
+hr,
+.nav-socials,
+.nav-links{
     display: none;
 }
 
-#nav-links{
+.lap-nav{
     display: flex;
     align-items: center;
+    list-style-type: none;
 }
 
-.nav-link{
-    margin: 0 1rem;
+.nav-link a{
+    margin: 0 1.5rem;
     list-style-type: none;
     cursor: pointer;
     color: var(--white);
     transition: all 0.2s ease;
 }
 
-.nav-link:hover{
+.lap-nav li a:hover{
     color: var(--red);
 }
 
@@ -628,13 +640,15 @@ nav{
     display: none;
 }
 
-.login{
+.login-lap{
     background-color: var(--red);
     border-radius: 0.2rem;
-    padding: 0.5rem 1.2rem;
+    width: 90px;
+    margin: 0 1rem;
+    padding: 0.3rem 0.2rem;
 }
 
-.login:hover,
+.login-lap:hover,
 #input2:hover{
     background-color: var(--first-white-lighten);
     border: 2px solid var(--red);
@@ -642,15 +656,15 @@ nav{
     outline: none;
 }
 
-.login:hover a{
+.login-lap:hover a{
     color: var(--red);
 }
 
-.login a{
+.login-lap a{
     color: var(--first-white-lighten);
 }
 
-.login a:hover{
+.login-lap a:hover{
     color: var(--red);
 }
 
