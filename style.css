@@ -654,6 +654,7 @@ hr,
     border: 2px solid var(--red);
     color: var(--red);
     outline: none;
+    padding-right: 1rem;
 }
 
 .login-lap:hover a{
