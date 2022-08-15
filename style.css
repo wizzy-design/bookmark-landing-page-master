@@ -1000,12 +1000,23 @@ footer .logo{
     font-size: 8px;
 }
 
+}
 
+/* Tablet versions */
 
+@media screen and (min-width: 471px) and (max-width: 1025px){
+    .blue-back,
+    .blue-back2{
+        display: none;
+    }
 
 }
 
-
+@media screen and (min-width: 570px) and (max-width: 1024px){
+    .browser{
+        width: 40%;
+    }
+}
 
 
 
